@@ -20,7 +20,7 @@ def assign_rooms (array)
 end
 
 def printer(attendees)
-  binding.pry
+  #binding.pry
   batch_badge_creator(attendees).each do |name|
     puts name
   end
