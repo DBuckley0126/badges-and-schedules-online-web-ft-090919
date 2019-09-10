@@ -12,3 +12,9 @@ new_array = []
   end
 new_array
 end
+
+def assign_rooms (array)
+  array.each_with_index.collect do |name, index|
+    "Hello,#{name}! You'll be assigned to room #{index}!"
+  end
+end
