@@ -22,6 +22,6 @@ end
 def printer (array)
   batch_badge_creator.each_with_index.collect do |name, index|
     name
-    puts assign_rooms[index]
+    p assign_rooms[index]
   end
 end
