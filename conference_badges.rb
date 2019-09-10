@@ -21,11 +21,11 @@ end
 
 def printer(attendees)
   binding.pry
-  batch_badge_creator.each do |name|
+  batch_badge_creator(attendees).each do |name|
     puts name
   end
 
-  assign_rooms.each do |location|
+  assign_rooms(attendees).each do |location|
     puts location
   end
 end
