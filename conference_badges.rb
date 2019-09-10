@@ -17,6 +17,6 @@ def assign_rooms (array)
 
   array.each_with_index.collect do |name, index|
     "Hello, #{name}! You'll be assigned to room #{index + 1}!"
-    puts "Hello, #{name}! You'll be assigned to room #{index + 1}!"
+    p "Hello, #{name}! You'll be assigned to room #{index + 1}!"
   end
 end
