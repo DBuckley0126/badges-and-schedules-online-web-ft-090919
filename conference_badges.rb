@@ -1,4 +1,4 @@
-
+require 'pry'
 def badge_maker (name)
   puts "Hello, my name is #{name}."
 "Hello, my name is #{name}."
@@ -21,7 +21,8 @@ end
 
 def printer (array)
   batch_badge_creator.each_with_index.collect do |name, index|
+    binding.pry
     name
-    p assign_rooms[index]
+    puts assign_rooms[index]
   end
 end
